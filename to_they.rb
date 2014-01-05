@@ -2,16 +2,15 @@
 
 require 'yaml'
 require 'optparse'
+require 'active_support/inflector'
 
 options = {}
 
 @replacements = {
   ' his or her '  => ' their ',
   ' he or she '   => ' they ',
-  ' that player ' => ' they ',
   ' His or her '  => ' Their ',
-  ' He or she '   => ' They ',
-  ' That player ' => ' They '
+  ' He or she '   => ' They '
 }
 
 def rephraseCard(card)
@@ -22,6 +21,18 @@ def rephraseCard(card)
     localchange = rules.gsub! search, replace
     changed = changed || ! localchange.nil?
   end
+
+
+  # Singularize the words after each 'they'
+  matches = /(they\s+[-'A-Za-z]+)/i.match(rules)
+  unless matches.nil?
+    matches.captures.each do |capture|
+      words = capture.split " "
+      words[-1] = words[-1].singularize
+      rules.sub! capture, words.join(' ')
+    end
+  end
+
   card['rules'] = rules
   return card, changed
 end

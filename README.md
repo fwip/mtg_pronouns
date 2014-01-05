@@ -7,9 +7,6 @@ There's been a bit of discussion regarding "his or her" vs. "their" in rules tex
 
 * 'He or she' -> 'They'
 * 'His or her' -> 'Their'
-* 'That player' -> 'They'
-
-The last is not strictly related to including non-binary folk, but it seems unlikely to cause problems.
 
 ## How to help
 
