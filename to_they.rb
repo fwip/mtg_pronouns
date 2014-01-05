@@ -28,8 +28,8 @@ end
 
 def card_to_s(card)
     text =  "#{card['name']} #{card['cost']}\n"
-    text += "---------------\n"
-    text += card['rules']
+    text += "---------------\n\n"
+    text += card['rules'].gsub "\n", "\n\n"
     text += "\n\n"
     return text
 end
