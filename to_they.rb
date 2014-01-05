@@ -26,17 +26,6 @@ def rephraseCard(card)
   return card, changed
 end
 
-def card_to_s(card)
-    text =  "#{card['name']} #{card['cost']}\n"
-    text += "---------------\n\n"
-    text += "**#{card['types']['supertypes']}**\n\n"
-    text += card['rules'].gsub "\n", "\n\n"
-    text += "\n\n"
-    unless card['power'].nil? or card['toughness'].nil?
-      text += "**#{card['power']} / #{card['toughness']}**\n\n"
-    end
-    return text
-end
 
 OptionParser.new do |opts|
   opts.banner = "Usage: to_they.rb <file> [options]"
@@ -53,9 +42,13 @@ end.parse!
 cardfile = ARGV.first
 cards = YAML.load_file cardfile
 
+changedcards = []
+
 cards.each do |card|
-  card, changed = rephraseCard card
-  if !options[:changed] or changed
-    puts card_to_s card
+  card, changed = rephraseCard(card)
+  if changed or !options[:changed]
+    changedcards.push(card)
   end
 end
+
+puts YAML.dump(changedcards)
