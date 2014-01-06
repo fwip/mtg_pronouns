@@ -13,6 +13,10 @@ options = {}
   ' He or she '   => ' They '
 }
 
+@specialcases = {
+  "doesn't" => "don't"
+}
+
 def rephraseCard(card)
   changed = false
   rules = card['rules']
@@ -28,7 +32,14 @@ def rephraseCard(card)
   unless matches.nil?
     matches.captures.each do |capture|
       words = capture.split " "
-      words[-1] = words[-1].singularize
+      modify = words[-1]
+      if @specialcases[modify].nil?
+        modify = modify.singularize
+      else
+        modify = @specialcases[modify]
+      end
+
+      words[-1] = modify
       rules.sub! capture, words.join(' ')
     end
   end

@@ -73,7 +73,7 @@
   type: Artifact
   rules: |-
     Remove Amulet of Quoz from your deck before playing if you're not playing for ante.
-    {T}, Sacrifice Amulet of Quoz: Target opponent may add the top card of their library to the ante. If they doesn't, you flip a coin. If you win the flip, that player loses the game. If you lose the flip, you lose the game. Activate this ability only during your upkeep.
+    {T}, Sacrifice Amulet of Quoz: Target opponent may add the top card of their library to the ante. If they don't, you flip a coin. If you win the flip, that player loses the game. If you lose the flip, you lose the game. Activate this ability only during your upkeep.
   set: Ice Age Rare
 - name: Ancient Runes
   cost: 2R
@@ -127,7 +127,7 @@
   type: Artifact
   rules: '{3}, {T}: Choose target non-Wall creature the active player has controlled
     continuously since the beginning of the turn. That player may pay {X}, where X
-    is that creature''s converted mana cost. If they doesn''t, the creature attacks
+    is that creature''s converted mana cost. If they don''t, the creature attacks
     this turn if able, and at the beginning of the next end step, destroy it if it
     didn''t attack. Activate this ability only before attackers are declared.'
   set: Ice Age Uncommon
@@ -913,7 +913,7 @@
   cost: 4U
   type: Sorcery
   rules: Reveal the top three cards of your library. Target opponent may choose to
-    put those cards into your hand. If they doesn't, put those cards into your graveyard
+    put those cards into your hand. If they don't, put those cards into your graveyard
     and draw five cards.
   set: Shards of Alara Rare
 - name: Cranial Extraction
@@ -2931,7 +2931,7 @@
   type: Enchantment  — Aura
   rules: |-
     Enchant creature
-    At the beginning of the upkeep of enchanted creature's controller, that player may pay {3}. If they doesn't, Mind Whip deals 2 damage to that player and you tap that creature.
+    At the beginning of the upkeep of enchanted creature's controller, that player may pay {3}. If they don't, Mind Whip deals 2 damage to that player and you tap that creature.
   set: Ice Age Rare
 - name: Mindblaze
   cost: 5R
@@ -3659,7 +3659,7 @@
 - name: Power Sink
   cost: XU
   type: Instant
-  rules: Counter target spell unless its controller pays {X}. If they doesn't, that
+  rules: Counter target spell unless its controller pays {X}. If they don't, that
     player taps all lands with mana abilities they controls and empties their mana
     pool.
   set: Beatdown Box Set Common, Classic Sixth Edition Uncommon, Urza's Saga Common,
@@ -4563,7 +4563,7 @@
   type: Creature  — Serpent
   p/t: (4/4)
   rules: Whenever Shrouded Serpent attacks, defending player may pay {4}. If they
-    doesn't, Shrouded Serpent can't be blocked this turn.
+    don't, Shrouded Serpent can't be blocked this turn.
   set: Prophecy Rare
 - name: Sin Collector
   cost: 1WB
@@ -5212,8 +5212,8 @@
   cost: U
   type: Enchantment
   rules: '{U}{U}: For each attacking creature without flying, its controller may pay
-    {1}. If they doesn''t, creatures you control blocking that creature gain first
-    strike until end of turn.'
+    {1}. If they don''t, creatures you control blocking that creature gain first strike
+    until end of turn.'
   set: Fallen Empires Common, Fallen Empires Common, Fallen Empires Common
 - name: Tidehollow Sculler
   cost: WB

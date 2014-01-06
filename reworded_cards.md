@@ -88,7 +88,7 @@ Amulet of Quoz 6
 
 Remove Amulet of Quoz from your deck before playing if you're not playing for ante.
 
-{T}, Sacrifice Amulet of Quoz: Target opponent may add the top card of their library to the ante. If they doesn't, you flip a coin. If you win the flip, that player loses the game. If you lose the flip, you lose the game. Activate this ability only during your upkeep.
+{T}, Sacrifice Amulet of Quoz: Target opponent may add the top card of their library to the ante. If they don't, you flip a coin. If you win the flip, that player loses the game. If you lose the flip, you lose the game. Activate this ability only during your upkeep.
 
 Ancient Runes 2R
 ---------------
@@ -152,7 +152,7 @@ Arcum's Whistle 3
 
 **Artifact**
 
-{3}, {T}: Choose target non-Wall creature the active player has controlled continuously since the beginning of the turn. That player may pay {X}, where X is that creature's converted mana cost. If they doesn't, the creature attacks this turn if able, and at the beginning of the next end step, destroy it if it didn't attack. Activate this ability only before attackers are declared.
+{3}, {T}: Choose target non-Wall creature the active player has controlled continuously since the beginning of the turn. That player may pay {X}, where X is that creature's converted mana cost. If they don't, the creature attacks this turn if able, and at the beginning of the next end step, destroy it if it didn't attack. Activate this ability only before attackers are declared.
 
 Arena 
 ---------------
@@ -1086,7 +1086,7 @@ Covenant of Minds 4U
 
 **Sorcery**
 
-Reveal the top three cards of your library. Target opponent may choose to put those cards into your hand. If they doesn't, put those cards into your graveyard and draw five cards.
+Reveal the top three cards of your library. Target opponent may choose to put those cards into your hand. If they don't, put those cards into your graveyard and draw five cards.
 
 Cranial Extraction 3B
 ---------------
@@ -3521,7 +3521,7 @@ Mind Whip 2BB
 
 Enchant creature
 
-At the beginning of the upkeep of enchanted creature's controller, that player may pay {3}. If they doesn't, Mind Whip deals 2 damage to that player and you tap that creature.
+At the beginning of the upkeep of enchanted creature's controller, that player may pay {3}. If they don't, Mind Whip deals 2 damage to that player and you tap that creature.
 
 Mindblaze 5R
 ---------------
@@ -4386,7 +4386,7 @@ Power Sink XU
 
 **Instant**
 
-Counter target spell unless its controller pays {X}. If they doesn't, that player taps all lands with mana abilities they controls and empties their mana pool.
+Counter target spell unless its controller pays {X}. If they don't, that player taps all lands with mana abilities they controls and empties their mana pool.
 
 Power Surge RR
 ---------------
@@ -5421,7 +5421,7 @@ Shrouded Serpent 4UUU
 
 **Creature  — Serpent**
 
-Whenever Shrouded Serpent attacks, defending player may pay {4}. If they doesn't, Shrouded Serpent can't be blocked this turn.
+Whenever Shrouded Serpent attacks, defending player may pay {4}. If they don't, Shrouded Serpent can't be blocked this turn.
 
 **(4/4)**
 
@@ -6196,7 +6196,7 @@ Tidal Flats U
 
 **Enchantment**
 
-{U}{U}: For each attacking creature without flying, its controller may pay {1}. If they doesn't, creatures you control blocking that creature gain first strike until end of turn.
+{U}{U}: For each attacking creature without flying, its controller may pay {1}. If they don't, creatures you control blocking that creature gain first strike until end of turn.
 
 Tidehollow Sculler WB
 ---------------
