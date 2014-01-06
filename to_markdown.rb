@@ -3,8 +3,7 @@
 require 'yaml'
 
 def card_to_s(card)
-    text =  "#{card['name']} #{card['cost']}\n"
-    text += "---------------\n\n"
+    text =  "#### #{card['name']} #{card['cost']}\n\n"
     text += "**#{card['type']}**\n\n"
     text += card['rules'].gsub "\n", "\n\n"
     text += "\n\n"
