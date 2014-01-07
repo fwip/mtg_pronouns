@@ -1,13 +1,17 @@
 .container {
-  -moz-column-count: 4;
+  -moz-column-count: auto;
   -moz-column-gap: 10px;
-  -webkit-column-count: 4;
+  -moz-column-width: 300px;
+  -webkit-column-count: auto;
   -webkit-column-gap: 10px;
-  column-count: 4;
+  -webkit-column-width: 300px;
+  column-count: auto;
   column-gap: 10px;
+  column-width: 300px;
 }
 
 .card {
+  width: 300px;
   border: black solid 1px;
   display: inline-block;
   padding: 10px;
