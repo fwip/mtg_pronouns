@@ -1,0 +1,63 @@
+.container {
+  -moz-column-count: 4;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  column-count: 4;
+  column-gap: 10px;
+}
+
+.card {
+  border: black solid 1px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.cost {
+  float: right;
+}
+
+.rules {
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+}
+
+.rule {
+  margin-bottom: 5px;
+}
+
+.pt {
+  float: right;
+}
+
+.nocolor { background-color: silver; }
+.nocolor .rules { background-color: #ccc; }
+
+.land { background-color: brown; color: #eee; }
+.land .rules { background-color: #ca9; color: black; }
+
+.gold { background-color: gold; }
+.gold .rules { background-color: #ff6; }
+
+.U { background-color: #88f; }
+.U .rules { background-color: #bbf; }
+
+.R { background-color: #f88; }
+.R .rules { background-color: #fab; }
+
+.B { background-color: #222; color: #eee; }
+.B .rules { background-color: #bbb; color: black }
+
+.W { background-color: #ffe; }
+.W .rules { background-color: #fff; }
+
+.G { background-color: #8f8; }
+.G .rules { background-color: #bfb; }
