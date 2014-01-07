@@ -2,6 +2,44 @@
 require 'yaml'
 require 'nokogiri'
 
+def to_icon(doc, char)
+  if ( /[UGRBW]/ =~ char )
+    doc.img src: "#{char}.png"
+  else
+    doc.text char
+  end
+end
+
+
+def to_icons(doc, text)
+  matches = /{([T0-9WUGBR])}/.match(text)
+  if matches.nil?
+    doc.text text
+  else
+    matches.each do |char|
+      to_icon(doc, char)
+    end
+  end
+end
+
+def add_rules(doc, card)
+  rules = card['rules'].split("\n")
+  doc.div.rules {
+    rules.each do |rule|
+      parens = /(.*)(\(.*\))/.match(rule)
+      if parens.nil?
+        doc.div.rule { doc.text rule }
+      else
+        doc.div.rule {
+          doc.text parens.captures.first
+          doc.span.parens { doc.text parens.captures.last }
+        }
+      end
+    end
+  }
+
+end
+
 def get_color(card)
   return 'land' if card['cost'].nil?
   costcolors = card['cost'].gsub(/[^WUGBR]/, '')
@@ -26,22 +64,24 @@ def emit_html(cards)
       doc.body {
         doc.div.container {
           cards.each do |card|
-            rules = card['rules'].split("\n")
             doc.div.card(class: get_color(card)) {
               doc.div.title {
                 doc.text card['name']
                 doc.div.cost {
-                  doc.text card['cost']
+                  unless card['cost'].nil?
+                    card['cost'].split('').each do |c|
+                      to_icon doc, c
+                    end
+                  end
+                  #doc.text card['cost']
                 }
               }
               doc.div.type {
                 doc.text card['type']
               }
-              doc.div.rules {
-                rules.each do |rule|
-                  doc.div.rule { doc.text rule }
-                end
-              }
+
+              add_rules(doc, card)
+
               doc.div.pt {
                 doc.text card['p/t']
               }

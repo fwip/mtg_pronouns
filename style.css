@@ -6,8 +6,17 @@
   -webkit-column-gap: 10px;
   -webkit-column-width: 300px;
   column-count: auto;
-  column-gap: 10px;
+  column-gap: 8px;
   column-width: 300px;
+}
+
+.parens {
+  font-style: italic;
+}
+
+img {
+  height: .8em;
+  width: .8em;
 }
 
 .card {
@@ -16,7 +25,7 @@
   display: inline-block;
   padding: 10px;
   border-radius: 10px;
-  margin: 5px;
+  margin: 4px;
 }
 
 .title {
@@ -45,7 +54,7 @@
 .nocolor { background-color: silver; }
 .nocolor .rules { background-color: #ccc; }
 
-.land { background-color: brown; color: #eee; }
+.land { background-color: #862; color: #eee; }
 .land .rules { background-color: #ca9; color: black; }
 
 .gold { background-color: gold; }
