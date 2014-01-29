@@ -528,9 +528,8 @@
 - name: Burning of Xinye
   cost: 4RR
   type: Sorcery
-  rules: Choose four lands you control and destroy those lands. Then target opponent
-    chooses four lands they control. Destroy those lands. Then Burning of Xinye deals
-    4 damage to each creature.
+  rules: You destroy four lands you control, then target opponent destroys four lands
+    they control. Then Burning of Xinye deals 4 damage to each creature.
   set: Masters Edition III Rare, Portal Three Kingdoms Rare
 - name: Butcher Orgg
   cost: 4RRR
@@ -1507,6 +1506,13 @@
   rules: Starting with you, each player may put a permanent card from their hand onto
     the battlefield. Repeat this process until no one puts a card onto the battlefield.
   set: Masters Edition Rare, Legends Rare
+- name: Evanescent Intellect
+  cost: U
+  type: Enchantment  — Aura
+  rules: |-
+    Enchant creature
+    Enchanted creature has "{1}{U}, {T}: Target player puts the top three cards of their library into their graveyard."
+  set: Born of the Gods Common
 - name: Evangelize
   cost: 4W
   type: Sorcery
@@ -3035,6 +3041,15 @@
   type: Instant
   rules: Each player shuffles their graveyard into their library.
   set: 'Ravnica: City of Guilds Uncommon'
+- name: Mogis, God of Slaughter
+  cost: 2BR
+  type: Legendary Enchantment Creature  — God
+  p/t: (7/5)
+  rules: |-
+    Indestructible
+    As long as your devotion to black and red is less than seven, Mogis isn't a creature.
+    At the beginning of each opponent's upkeep, Mogis deals 2 damage to that player unless they sacrifice a creature.
+  set: Born of the Gods Mythic Rare
 - name: Molten Psyche
   cost: 1RR
   type: Sorcery
@@ -3542,6 +3557,15 @@
     If that card is the named card, that player puts it into their hand. If it isn''t,
     the player puts it into their graveyard.'
   set: Masters Edition Rare, Chronicles Rare, Legends Rare
+- name: Phenax, God of Deception
+  cost: 3UB
+  type: Legendary Enchantment Creature  — God
+  p/t: (4/7)
+  rules: |-
+    Indestructible
+    As long as your devotion to blue and black is less than seven, Phenax isn't a creature.
+    Creatures you control have "{T}: Target player puts the top X cards of their library into their graveyard, where X is this creature's toughness."
+  set: Born of the Gods Mythic Rare
 - name: Phyrexian Tyranny
   cost: UBR
   type: Enchantment
@@ -3763,7 +3787,7 @@
     card of their library. The player who reveals the card with the highest converted
     mana cost may change the target or targets. If two or more cards are tied for
     highest cost, the target or targets remain unchanged. Changing targets this way
-    doesn't trigger this ability.
+    doesn't trigger abilities of permanents named Psychic Battle.
   set: Invasion Rare
 - name: Psychic Drain
   cost: XUB
@@ -4586,6 +4610,14 @@
   p/t: (6/4)
   rules: At the beginning of each end step, each player discards their hand.
   set: Dragon's Maze Rare
+- name: Siren of the Silent Song
+  cost: 1UB
+  type: Creature  — Zombie Siren
+  p/t: (2/1)
+  rules: |-
+    Flying
+    Inspired — Whenever Siren of the Silent Song becomes untapped, each opponent discards a card, then puts the top card of their library into their graveyard.
+  set: Born of the Gods Uncommon
 - name: Sirocco
   cost: 1R
   type: Instant
@@ -5460,6 +5492,11 @@
     Enchant creature
     At the beginning of the upkeep of enchanted creature's controller, Unnatural Hunger deals damage to that player equal to that creature's power unless they sacrifice another creature.
   set: Mercadian Masques Rare
+- name: Unravel the Æther
+  cost: 1G
+  type: Instant
+  rules: Choose target artifact or enchantment. Its owner shuffles it into their library.
+  set: Born of the Gods Uncommon
 - name: Utopia Sprawl
   cost: G
   type: Enchantment  — Aura
@@ -5689,6 +5726,13 @@
     {X}{X}, {T}: Target player puts the top X cards of their library into their graveyard.
     Morph {3} (You may cast this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)
   set: Future Sight Rare
+- name: Whims of the Fates
+  cost: 5R
+  type: Sorcery
+  rules: Starting with you, each player separates all permanents they control into
+    three piles. Then each player chooses one of their piles at random and sacrifices
+    those permanents. (Piles can be empty.)
+  set: Born of the Gods Rare
 - name: Whiplash Trap
   cost: 3UU
   type: Instant  — Trap
