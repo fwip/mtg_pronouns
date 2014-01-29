@@ -560,7 +560,7 @@ If a player does not tap any nonland cards during their turn, Burning Cinder Fur
 
 **Sorcery**
 
-Choose four lands you control and destroy those lands. Then target opponent chooses four lands they control. Destroy those lands. Then Burning of Xinye deals 4 damage to each creature.
+You destroy four lands you control, then target opponent destroys four lands they control. Then Burning of Xinye deals 4 damage to each creature.
 
 #### Butcher Orgg 4RRR
 
@@ -1597,6 +1597,14 @@ Target opponent chooses a creature they control. Other creatures they controls c
 **Sorcery**
 
 Starting with you, each player may put a permanent card from their hand onto the battlefield. Repeat this process until no one puts a card onto the battlefield.
+
+#### Evanescent Intellect U
+
+**Enchantment  — Aura**
+
+Enchant creature
+
+Enchanted creature has "{1}{U}, {T}: Target player puts the top three cards of their library into their graveyard."
 
 #### Evangelize 4W
 
@@ -3230,6 +3238,18 @@ At the beginning of each player's upkeep, that player chooses a permanent for ea
 
 Each player shuffles their graveyard into their library.
 
+#### Mogis, God of Slaughter 2BR
+
+**Legendary Enchantment Creature  — God**
+
+Indestructible
+
+As long as your devotion to black and red is less than seven, Mogis isn't a creature.
+
+At the beginning of each opponent's upkeep, Mogis deals 2 damage to that player unless they sacrifice a creature.
+
+**(7/5)**
+
 #### Molten Psyche 1RR
 
 **Sorcery**
@@ -3770,6 +3790,18 @@ When Personal Incarnation dies, its owner loses half their life, rounded up.
 
 **(3/4)**
 
+#### Phenax, God of Deception 3UB
+
+**Legendary Enchantment Creature  — God**
+
+Indestructible
+
+As long as your devotion to blue and black is less than seven, Phenax isn't a creature.
+
+Creatures you control have "{T}: Target player puts the top X cards of their library into their graveyard, where X is this creature's toughness."
+
+**(4/7)**
+
 #### Phyrexian Tyranny UBR
 
 **Enchantment**
@@ -3968,7 +4000,7 @@ At the beginning of your upkeep, destroy Psychic Allergy unless you sacrifice tw
 
 **Enchantment**
 
-Whenever a player chooses one or more targets, each player reveals the top card of their library. The player who reveals the card with the highest converted mana cost may change the target or targets. If two or more cards are tied for highest cost, the target or targets remain unchanged. Changing targets this way doesn't trigger this ability.
+Whenever a player chooses one or more targets, each player reveals the top card of their library. The player who reveals the card with the highest converted mana cost may change the target or targets. If two or more cards are tied for highest cost, the target or targets remain unchanged. Changing targets this way doesn't trigger abilities of permanents named Psychic Battle.
 
 #### Psychic Drain XUB
 
@@ -4815,6 +4847,16 @@ When Singe-Mind Ogre enters the battlefield, target player reveals a card at ran
 At the beginning of each end step, each player discards their hand.
 
 **(6/4)**
+
+#### Siren of the Silent Song 1UB
+
+**Creature  — Zombie Siren**
+
+Flying
+
+Inspired — Whenever Siren of the Silent Song becomes untapped, each opponent discards a card, then puts the top card of their library into their graveyard.
+
+**(2/1)**
 
 #### Sirocco 1R
 
@@ -5738,6 +5780,12 @@ Enchant creature
 
 At the beginning of the upkeep of enchanted creature's controller, Unnatural Hunger deals damage to that player equal to that creature's power unless they sacrifice another creature.
 
+#### Unravel the Æther 1G
+
+**Instant**
+
+Choose target artifact or enchantment. Its owner shuffles it into their library.
+
 #### Utopia Sprawl G
 
 **Enchantment  — Aura**
@@ -5969,6 +6017,12 @@ At the beginning of each opponent's upkeep, Wheel of Torture deals X damage to t
 {X}{X}, {T}: Target player puts the top X cards of their library into their graveyard.
 
 Morph {3} (You may cast this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)
+
+#### Whims of the Fates 5R
+
+**Sorcery**
+
+Starting with you, each player separates all permanents they control into three piles. Then each player chooses one of their piles at random and sacrifices those permanents. (Piles can be empty.)
 
 #### Whiplash Trap 3UU
 
