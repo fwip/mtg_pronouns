@@ -14,11 +14,6 @@
   font-style: italic;
 }
 
-img {
-  height: .8em;
-  width: .8em;
-}
-
 .card {
   width: 300px;
   border: black solid 1px;

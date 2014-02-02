@@ -2,37 +2,31 @@
 require 'yaml'
 require 'nokogiri'
 
-def to_icon(doc, char)
-  if ( /[UGRBW]/ =~ char )
-    doc.img src: "#{char}.png"
-  else
-    doc.text char
+def text_to_icon(text, convert_all=false)
+  return '' if text.nil?
+  regex = convert_all ? /([0-9]+|[wubrgspxyzq]|\(.*?\))/i : /({.*?})/
+  text.gsub!(regex) do |c|
+    c.downcase!
+    c.gsub!(/[(){}\/]/, '')
+    "<img src='img/#{c}.png'>"
   end
-end
-
-
-def to_icons(doc, text)
-  matches = /{([T0-9WUGBR])}/.match(text)
-  if matches.nil?
-    doc.text text
-  else
-    matches.each do |char|
-      to_icon(doc, char)
-    end
-  end
+  text
 end
 
 def add_rules(doc, card)
   rules = card['rules'].split("\n")
   doc.div.rules {
     rules.each do |rule|
-      parens = /(.*)(\(.*\))/.match(rule)
+      rule.gsub!('—', '-')
+      #rule = rules_to_icons(rule)
+      rule = text_to_icon(rule)
+      parens = /(.*)(\(.*?\))/.match(rule)
       if parens.nil?
-        doc.div.rule { doc.text rule }
+        doc.div.rule { doc << rule }
       else
         doc.div.rule {
-          doc.text parens.captures.first
-          doc.span.parens { doc.text parens.captures.last }
+          doc << parens.captures.first
+          doc.span.parens { doc << parens.captures.last }
         }
       end
     end
@@ -68,11 +62,7 @@ def emit_html(cards)
               doc.div.title {
                 doc.text card['name']
                 doc.div.cost {
-                  unless card['cost'].nil?
-                    card['cost'].split('').each do |c|
-                      to_icon doc, c
-                    end
-                  end
+                  doc << text_to_icon(card['cost'], true)
                   #doc.text card['cost']
                 }
               }
